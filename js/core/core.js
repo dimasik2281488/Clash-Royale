@@ -1,21 +1,8 @@
-const canvas = document.getElementById('gameCanvas');
-const ctx = canvas.getContext('2d');
-
-function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    // Здесь будут вызовы
-    
-    requestAnimationFrame(gameLoop);
-}
-
-gameLoop();
-
 function helloCore() {
    console.log("core mechanics ready");
 }
 // Функция для рисования башни игрока (синяя)
-window.drawPlayerTower = function(ctx, 200, 300) {
+window.drawPlayerTower = function(ctx, x, y) {
     // TODO: Синяя башня с зубцами
     
     // Основание
@@ -36,7 +23,7 @@ window.drawPlayerTower = function(ctx, 200, 300) {
     ctx.lineTo(x + 15, y - 50);
     ctx.fill();
 }
-window.drawEnemyTower = function(ctx, 600, 300) {
+window.drawEnemyTower = function(ctx, x, y) {
     // TODO: Красная башня с зубцами
     
     // Основание
