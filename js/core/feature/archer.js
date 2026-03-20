@@ -20,7 +20,5 @@ window.drawArcher = function(ctx, x, y, isPlayer) {
     ctx.lineTo(x + 28, y - 18);
     ctx.stroke();
 }
-const canvas = document.getElementById('gameCanvas'); // замените на ID вашего canvas
-const ctx = canvas.getContext('2d');
 
 drawArcher(ctx, 400, 300, true);
