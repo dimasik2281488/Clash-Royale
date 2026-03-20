@@ -23,10 +23,3 @@ ctx.arc(x + 15, y - 15, 5, 0, Math.PI * 2);
 ctx.fill();
 }
 
-
-    
-    // Рисуем все типы войск
-    drawTroop(ctx, 200, 200, 'knight', true);   // Рыцарь (игрок)
-    drawTroop(ctx, 400, 200, 'archer', true);  // Лучник (игрок)
-    drawTroop(ctx, 600, 200, 'mage', true);    // Маг (игрок)
-</script>
