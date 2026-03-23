@@ -1,4 +1,4 @@
-// 1)Асадов Маджнун-spawn
+// 1) Асадов Маджнун-spawn
 // Функция для эффекта появления
 window.drawSpawnEffect = function(ctx, x, y) {
     // TODO: Расходящиеся круги
@@ -9,10 +9,10 @@ window.drawSpawnEffect = function(ctx, x, y) {
         ctx.beginPath();
         ctx.arc(x, y, i * 8, 0, Math.PI * 2);
         ctx.stroke();
-    }
-}
----------------------------------------------------------------------------------------------------------------
-    //Тимофеев Семён
+    
+
+
+    // 2) Тимофеев Семён-hit
     window.drawHitEffect = function(ctx, x, y) {
     
     ctx.fillStyle = '#ff0000';
@@ -32,5 +32,22 @@ window.drawSpawnEffect = function(ctx, x, y) {
         ctx.beginPath();
         ctx.arc(sparkX, sparkY, 2, 0, Math.PI * 2);
         ctx.fill();
-    }
-}
+    
+
+// 3) Турлюн Дмитрий-lightning
+// Функция для рисования молнии
+window.drawLightning = function(ctx, x1, y1, x2, y2) {
+    // TODO: Ломаная линия-зигзаг
+    
+    ctx.strokeStyle = '#ffff00';
+    ctx.lineWidth = 4;
+    
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    
+    const midX = (x1 + x2) / 2 + (Math.random() * 20 - 10);
+    const midY = (y1 + y2) / 2 + (Math.random() * 20 - 10);
+    
+    ctx.lineTo(midX, midY);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
