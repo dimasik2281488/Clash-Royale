@@ -1,4 +1,4 @@
-// СОСТОЯНИЕ - данные игры
+// СОСТОЯНИЕ - данные игры TEAM-Game state 82v(Вадим)
 window.GameState = {
     isActive: false,
     elixir: 5,
